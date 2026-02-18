@@ -23,10 +23,18 @@ enum editorkey {
 };
 
 /***data***/
+
+typedef struct erow {
+int size;
+char *chars;
+} erow;
+
 struct editorConfig{
 int cx,cy;
 int screenrows;
 int screencols;
+int numrow;
+erow row;
 struct termios orig_termios;
 };
 struct editorConfig E;
@@ -272,5 +280,7 @@ int main() {
 }
         return 0;
 }
+
+
 
 
