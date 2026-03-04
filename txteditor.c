@@ -60,6 +60,7 @@ struct editorConfig E;
 
 /***PROTOTYPE ***/
 void editorSetStatusMessage(const char *fmt,...);
+void editorRefreshScreen();
 
 /***Terminal***/
 void die(const char *s){
